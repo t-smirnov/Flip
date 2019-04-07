@@ -6,12 +6,10 @@ akka {
     log-remote-lifecycle-events = off
     helios.tcp {
       hostname = "localhost"
-      port = 25514        
+      # this port value is self of node   
     }
   }
   cluster {
-    roles = ["seed"]  # custom node roles
-    seed-nodes = ["akka.tcp://flipcluster@localhost:25512"]
     # when node cannot be reached within 10 sec, mark is as down
     auto-down-unreachable-after = 10s
   }

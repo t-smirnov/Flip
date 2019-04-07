@@ -8,8 +8,21 @@
   <ItemGroup>
     <PackageReference Include="Akka" Version="1.3.12" />
     <PackageReference Include="Akka.Cluster" Version="1.3.12" />
+    <PackageReference Include="dotnet-etcd" Version="2.3.1" />
+    <PackageReference Include="Hocon" Version="1.0.0" />
+    <PackageReference Include="Hocon.Configuration" Version="1.0.0" />
+    <PackageReference Include="Hocon.Extensions.Configuration" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.0.0-preview3-19153-02" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.CommandLineUtils" Version="1.1.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0-preview3.19153.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.0.0-preview3.19153.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Yaml" Version="2.0.0-preview2" />
     <PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" Version="3.0.0-preview3.19153.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0-preview3.19153.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.0.0-preview3.19153.1" />
@@ -22,6 +35,10 @@
   <ItemGroup>
     <None Remove="config.hocon" />
     <Content Include="config.hocon">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Remove="config.yml" />
+    <Content Include="config.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

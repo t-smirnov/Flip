@@ -1,0 +1,3 @@
+etcd:
+  host: localhost
+  port: 2379
